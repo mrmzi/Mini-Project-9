@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #282828;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Clock{
+    height: 360px;
+    width: 360px;
+    background-color: inherit;
+    box-shadow: inset 10px 10px 15px #202020,
+    inset -10px -10px 15px #202020;
+    border-radius: 50%;
+    background-image: url(1.png);
+    background-size: cover;
+    background-color: rgba(0,0,0,.8);
+    background-blend-mode: darken;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Clock::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: rgb(131, 124, 124);
+    position: absolute;
+    z-index: 11;
+    border-radius: 50%;
+
+}
+/* .hour{
+    width: 30%;
+    height: 10px;
+   
+    position:absolute;
+    z-index: 1;
+    margin-left:100px ;
+    border-radius: 10px;
+} */
+/* .minutes{
+    width: 37%;
+    height: 8px;
+   
+    position:absolute;
+    z-index: 2;
+    border-radius: 10px;
+    /* transform: rotateZ(180deg); 
+    margin-left: 114px;
+} */
+/* .second{
+    width: 50%; 
+     padding:0 100px 20px 200px; 
+    text-align: center;
+    height: 5px;
+   
+    position:absolute;
+    z-index: 3;
+     margin-left:150px ; 
+    border-radius: 10px;
+    transform: rotateZ(90deg);
+     padding-left: 0; 
+    display: flex;
+     justify-content: space-between; 
+    align-items: center;
+   /* transform-origin: 50%; */
+    /* top: 50%; */
+   /* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+/* } */
+/* .second::before{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: red;
+    
+/* } */  
+.hand {
+    width: 50%;
+    right: 50%;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    border-radius: 6px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    /* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+  }
+  
+   .hour{
+    background-color: orange;
+    width: 30%;
+    z-index: 3;
+    height: 10px;
+  }
+  
+  .minutes {
+    height: 5px;
+    z-index: 10;
+    background-color: rgb(20, 202, 193);
+    width: 40%;
+   
+  }
+  
+  .second{
+    background-color: rgb(19, 194, 34);
+    width: 45%;
+    height: 2px;
+
+  }
